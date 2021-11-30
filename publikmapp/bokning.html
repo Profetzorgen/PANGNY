@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pang i grillen - Bokning</title>
+    <meta name="description" content="Best roadkill restaurant in Sweden" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bokningstyle.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="bokning-header">
+        <h1 class="logo">PANG I GRILLEN</h1>
+        <input type="checkbox" id="menubox" />
+        <label class="menu-icon" for="menubox"
+          ><span class="nav-icon"></span
+        ></label>
+        <nav class="bokningsnav">
+          <ul>
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./meny.html">Meny</a></li>
+            <li><a href="./bokning.html">Bokning</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-bokning">
+        <article class="background">
+          <h2 class="titel-bokning">Boka Bord</h2>
+          <form id="booking" action="/skriva-fil" method="post" autocomplete="off"><!--<form id="booking" action="#" autocomplete="off">-->
+            <fieldset>
+              <div>
+                <label for="date">Välj datum:</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div>
+                <label for="antal">Antal gäster:</label>
+                <input
+                  type="number"
+                  id="antal"
+                  name="antal"
+                  placeholder="0"
+                  required
+                />
+              </div>
+              <div>
+                <label for="tid">Tid:</label>
+                <input type="time" id="tid" name="tid" required />
+              </div>
+              <div>
+                <label for="namn">Namn:</label>
+                <input
+                  type="text"
+                  id="namn"
+                  name="namn"
+                  placeholder="Namn"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+
+              <div id="send">
+                <input type="submit" value="BOKA!" />
+              </div>
+            </fieldset>
+          </form>
+        </article>
+      </main>
+
+      <footer>
+        Copyright &copy; Pang i Grillen 2021 | Website design by Tomtemors
+        Gastarlåda AB
+      </footer>
+    </div>
+  </body>
+</html>
