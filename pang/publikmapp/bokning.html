@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pang i grillen - Bokning</title>
+    <meta name="description" content="Best roadkill restaurant in Sweden" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bokningstyle.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="bokning-header">
+        <h1 class="logo">PANG I GRILLEN</h1>
+        <input type="checkbox" id="menubox" />
+        <label class="menu-icon" for="menubox"
+          ><span class="nav-icon"></span
+        ></label>
+        <nav class="bokningsnav">
+          <ul>
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./meny.html">Meny</a></li>
+            <li><a href="./bokning.html">Bokning</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-bokning">
+        <article class="background">
+          <fieldset id="booking">
+          <h2 class="titel-bokning">Boka Bord</h2>
+          
+            <div>
+              <label class="formInfoBokning">Välj datum</label>
+              <input type="date" id="txtDate" placeholder="Välj datum: " />
+            </div>
+            <div>
+              <label class="formInfoBokning">Antal gäster: </label>
+              <input type="number" id="txtAntal" placeholder="Antal: " />
+            </div>
+            <div>
+              <label class="formInfoBokning">Välj tid: </label>
+              <input type="time" id="txtTid" placeholder="Välj tid: " />
+            </div>
+            <div>
+              <label class="formInfoBokning">Namn: </label>
+              <input type="text" id="txtName" placeholder="Namn: " />
+            </div>
+            <div>
+              <label class="formInfoBokning">Email: </label>
+              <input type="email" id="txtEmail" placeholder="eMail: " />
+            </div>
+            <div>
+              <label class="formInfoBokning">Information till oss / önskemål eller allergier etc: </label>
+              <textarea id="msg" name="msg" placeholder="Write some message ..." style="height:100px"></textarea>
+            </div>
+    
+            <!--Add to button to save the data.-->
+            <div>
+                <input type="button" id="bt" value="Boka!" onclick="saveFile()" />
+            </div>
+        
+        </fieldset>
+        </article>
+      </main>
+
+      <footer>
+        Copyright &copy; Pang i Grillen 2021 | Website design by Tomtemors
+        Gastarlåda AB
+      </footer>
+    </div>
+  </body>
+  <script src="bokningTillText.js"></script>
+</html>
