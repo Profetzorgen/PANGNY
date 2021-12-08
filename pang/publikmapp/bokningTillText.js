@@ -34,4 +34,5 @@ let saveFile = () => {
     }
 
     newLink.click(); 
-}
+}// DETTA SKRIPT SKA SKICKA INFO TILL INDEX.JS EFTER VALIDERING, SEDAN FÅ TBX SVAR
+// MED UPPDATERAD HEMSIDA.

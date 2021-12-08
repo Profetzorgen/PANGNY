@@ -39,17 +39,6 @@ app.get("/meny", (req, res) => {
     res.sendFile(__dirname + "/meny.html");  
 });
 ////////////////////////////////////////////////////////////////////////
-
-
-
-// den här som behöver fås igång
-// app.post("/skriva-fil", (req, res) => {
-//     let date = req.body.date;// lägg till en radbrytning mellan varje meddelande
-//     fs.appendFile("meddelanden.txt", date, (err) => { // OBS - skapar filen om den inte redan finns, lägger annars till befintlig text
-//         if(err) throw err;
-//     });
-//     res.send(`Skrev till fil: ${date}`);
-// });
-// action "/skriva-fil" är app.post
-// method="post" är .post
-// <textarea name ="meddelande" är meddelande.
+// bokning.html validerar input, skickar sedan ifall validering OK, hit allting
+// och detta skript validerar även den en gång, slutligen uppdateras hemsidan
+// genom att detta skript skickar tillbaka något, och uppdaterar textfilen (json-format)
